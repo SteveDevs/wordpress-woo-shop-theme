@@ -1,0 +1,87 @@
+{
+	"name": "suki",
+	"title": "Suki",
+	"description": "Suki is a free multi-purpose WordPress theme that is lightweight, fast, highly customizable, and flexible. Build any kind of websites, blog, business, portfolio, WooCommerce storefronts, and also niche websites like Spa, Restaurant, Wedding, Non Profit, Education, Hotel, etc. Fully compatible with Gutenberg, Elementor, Brizy, Visual Composer, Beaver Builder, Divi, SiteOrigin, and other page builders. Tons of design options for customizing typography, colors, layout, and also free built-in Header and Footer builder. Built with SEO in mind, Suki is incredibly fast, mobile optimized, 100% HTML valid, and integrated with Schema.org structured data. Furthermore, Suki supports accessibility, multi-language translation, and RTL languages. Learn more about the full features and also \"one click demo import\" feature at https://sukiwp.com/.",
+	"uri": "https://sukiwp.com/",
+	"scripts": {
+		"dev": "npm run development",
+		"development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+		"watch": "npm run development -- --watch",
+		"hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+		"prod": "npm run production",
+		"production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+	},
+	"author": {
+		"name": "Suki WordPress Theme",
+		"url": "https://sukiwp.com/#about"
+	},
+	"version": "1.2.13",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"two-columns",
+		"left-sidebar",
+		"right-sidebar",
+		"grid-layout",
+		"custom-colors",
+		"custom-menu",
+		"editor-style",
+		"featured-images",
+		"footer-widgets",
+		"full-width-template",
+		"microformats",
+		"rtl-language-support",
+		"theme-options",
+		"threaded-comments",
+		"translation-ready",
+		"blog",
+		"e-commerce",
+		"portfolio"
+	],
+	"private": true,
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/sukiwp/suki.git"
+	},
+	"contributors": [
+		{
+			"name": "sukiwp",
+			"url": "https://profiles.wordpress.org/sukiwp"
+		}
+	],
+	"devDependencies": {
+		"autoprefixer": "^9.8.6",
+		"browser-sync": "^2.26.13",
+		"browser-sync-webpack-plugin": "^2.0.1",
+		"cross-env": "^7.0.3",
+		"del": "^5.1.0",
+		"google-fonts-complete": "^2.1.0",
+		"gulp": "^4.0.2",
+		"gulp-autoprefixer": "^7.0.1",
+		"gulp-clean-css": "^4.2.0",
+		"gulp-merge-media-queries": "^0.2.1",
+		"gulp-rename": "^2.0.0",
+		"gulp-replace": "^1.0.0",
+		"gulp-rtlcss": "^1.4.0",
+		"gulp-sass": "^4.0.2",
+		"gulp-terser": "^1.2.0",
+		"gulp-watch": "^5.0.1",
+		"gulp-wp-pot": "^2.3.6",
+		"gulp-zip": "^5.0.1",
+		"laravel-mix": "^5.0.9",
+		"postcss": "^7.0.35",
+		"sass": "^1.30.0",
+		"sass-loader": "^8.0.2",
+		"tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
+		"vue-template-compiler": "^2.6.12"
+	},
+	"browserslist": [
+		"last 1 version",
+		"ie >= 10"
+	],
+	"readme": {
+		"requiresWP": "4.5",
+		"testedWP": "5.4",
+		"requiresPHP": "5.6"
+	},
+	"dependencies": {}
+}

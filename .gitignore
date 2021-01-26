@@ -1,0 +1,12 @@
+# Node modules
+node_modules
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build files
+__build
+
+# Private backup
+__bak

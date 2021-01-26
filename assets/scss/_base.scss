@@ -1,0 +1,199 @@
+// -------------------------------------------------------------
+// Global
+// -------------------------------------------------------------
+
+* {
+	border-color: $color_border; // default
+
+	&, &:before, &:after {
+		box-sizing: border-box;
+	}
+
+	&:focus {
+		outline: 0;
+	}
+}
+
+html {
+	min-height: 100vh;
+
+	@include base(); // default
+}
+
+body {
+	position: relative;
+	margin: 0;
+	background-color: $color_bg; // default
+	color: $color_text; // default
+	min-height: 100vh;
+	
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+p {
+	margin: 0 0 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 1.5rem;
+	@include headingColor();
+}
+
+h1 {
+	@include h1();
+}
+
+h2 {
+	@include h2();
+}
+
+h3 {
+	@include h3();
+}
+
+h4 {
+	@include h4();
+}
+
+h5, h6 {
+	@include h4();
+
+	font-size: 1rem; // default
+	font-weight: 600; // default
+}
+
+hr {
+	margin: 1.5rem 0;
+	border: none;
+	border-color: inherit;
+	@include border( bottom );
+}
+
+blockquote {
+	margin: 0 0 1.5rem;
+
+	@include blockquote();
+
+	> *:last-child {
+		margin-bottom: 0;
+	}
+
+	p {
+		margin: 0 0 1em;
+	}
+
+	cite {
+		display: block;
+		font-size: 0.85rem;
+		opacity: 0.6;
+	}
+}
+
+ul,
+ol {
+	margin: 0 0 1.5rem;
+	padding-left: 2rem;
+
+	li {
+		margin: 0;
+	}
+
+	li > & {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
+
+table {
+	@include table();
+}
+
+img,
+video {
+	max-width: 100%;
+	height: auto;
+}
+
+img {
+	vertical-align: middle;
+}
+
+iframe {
+	border: none;
+}
+
+pre {
+	max-width: 100%;
+	margin: 0 0 1.5rem;
+	padding: 0.6rem 1.2rem;
+	overflow: auto;
+	font-size: 1em;
+	font-family: monospace;
+	background-color: $color_subtle; // default
+}
+
+code {
+	background-color: $color_subtle; // default
+}
+
+a {
+	background-color: transparent;
+	text-decoration: none;
+	color: $color_accent; // default
+	@include transition();
+
+	&:hover, &:focus {
+		color: $color_heading; // default
+	}
+}
+
+figure {
+	margin: 0;
+}
+
+address {
+	margin: 0 0 1.5rem;
+}
+
+dt {
+	font-weight: 600;
+}
+
+mark,
+ins {
+	background-color: transparent;
+	color: inherit;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+svg {
+	vertical-align: middle;
+}
+
+::selection {
+	background-color: $color_accent; // default
+	color: $color_bg; // default
+}
+
+*::placeholder {
+	opacity: 0.75;
+	color: inherit;
+}
